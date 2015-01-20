@@ -38,3 +38,23 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
+gem 'foundation-rails'
+gem 'mysql2'
+gem 'omniauth'
+gem 'omniauth-linkedin'
+gem 'slim-rails'
+gem 'thin'
+
+group :development do
+  gem 'haml2slim'
+  gem 'html2haml'
+  gem 'hub', :require=>nil
+  gem 'rails_apps_pages'
+  gem 'rails_layout'
+end
+
+group :production do
+  gem 'rails_12factor'
+end
+
